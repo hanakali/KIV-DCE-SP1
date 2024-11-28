@@ -1,0 +1,13 @@
+---
+  - name: LoadBalancer setup
+    hosts: loadBalancer
+    become: true
+    roles:
+      - docker
+      - nginx
+
+  - name: Backends setup
+    hosts: backend
+    become: true
+    roles:
+      - docker
