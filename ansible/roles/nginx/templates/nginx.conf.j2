@@ -1,4 +1,7 @@
-# NGINX Load Balancer Config
+events {
+    worker_connections 1024;
+}
+
 http {
     upstream backend {
         {% for host in groups['backend'] %}
