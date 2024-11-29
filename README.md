@@ -33,7 +33,8 @@ Pro správné sputění aplikace je nutné mít nainstalované nástroje Terrafo
    cd ..
    ansible-playbook -i dynamic_inventories/cluster ansible/cluster-profile.yml
    ```
-8. Pro úplné ukončení aplikace zadejte následující příkaz, který zruší všechny vytvořené instance.
+8. Nasazená aplikace je dostupná na adrese `http://<ip-adresa-load-balanceru>:80`. Pro zobrazení informací o službách použijte formát `http://<ip-adresa-load-balanceru>:80/find/<služba>` napříkald `http://<ip-adresa-load-balanceru>:80/find/echo`
+9. Pro úplné ukončení aplikace zadejte následující příkaz, který zruší všechny vytvořené instance.
    ```bash
    terraform destroy
    ```
