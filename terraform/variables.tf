@@ -13,7 +13,7 @@ variable "vm_ssh_pubkey" {
 }
 variable "vm_admin_user" {
     description = "Username of the admin user"
-    default = "nodeadm"
+    default = "root"
   
 }
 variable "vm_node_init_log" {
