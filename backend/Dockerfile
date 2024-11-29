@@ -2,7 +2,7 @@
 # Simple backend server image
 #
 
-FROM python:3.8-slim
+FROM python:3.13-slim
 
 WORKDIR /opt/backend
 
