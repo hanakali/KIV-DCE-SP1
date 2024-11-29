@@ -1,7 +1,7 @@
 - name: Run backend container
   docker_container:
     name: backend
-    image: ghcr.io/hanakali/kiv-dce-sp1/backend:latest
+    image: ghcr.io/hanakali/kiv-dce-sp1:main
     state: started
     restart_policy: unless-stopped
     ports:
