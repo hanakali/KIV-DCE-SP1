@@ -2,14 +2,14 @@
 # Simple backend server image
 #
 
-FROM ubuntu:24.04
+FROM python:3.13-slim
 
 WORKDIR /opt/backend
 
-RUN pip3 install flask
+RUN pip install flask
 
 COPY Python /opt/backend
 
-CMD ["python3", "/opt/backend/simple-backend.py"]
+CMD ["python", "/opt/backend/simple-backend.py"]
 
 # EOF
