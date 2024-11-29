@@ -6,7 +6,6 @@ FROM python:3.13-slim
 
 WORKDIR /opt/backend
 
-RUN yum -q -y install python3
 RUN pip3 install flask
 
 COPY python /opt/backend
