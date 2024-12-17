@@ -34,7 +34,7 @@ resource "opennebula_virtual_machine" "loadBalancer-node" {
   }
   disk {
     #image_id = opennebula_image.os-image.id
-    image_id = 766
+    image_id = 687
     target   = "vda"
     size     = 12000 # 12GB
   }
@@ -82,7 +82,7 @@ resource "opennebula_virtual_machine" "backend-node" {
   }
   disk {
     #image_id = opennebula_image.os-image.id
-    image_id = 766
+    image_id = 687
     target   = "vda"
     size     = 12000 # 12GB
   }
